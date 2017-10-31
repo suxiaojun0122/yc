@@ -1,0 +1,369 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+html{
+	font-size:62.5%;
+}
+body{
+	line-height: 1.5;
+	background:#fff;
+}
+ul,ol{
+	list-style: none;
+}
+::selection{
+	background: #ccc;
+}
+/*清除浮动*/
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*内容居中*/
+.center{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+a{
+	color:#000;
+	text-decoration: none;
+}
+
+@media screen and  (max-width:767px) {
+	header {
+		width: 100%;
+	}
+	.nav {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.nav>ul {
+		/*padding: 2rem 0;*/
+		display: block;
+		float: left;
+		/*background: red;*/
+	}
+	.nav>ul>li {
+		float: left;
+		padding-right: 2rem;
+		padding: 2rem 1rem;
+		font-size: 18px;
+	}
+	.nav>ul>li:first-of-type{
+		background: orangered;
+		color: white;
+	}
+	.nav>ul>li:nth-of-type(2){
+		display: none;
+	}
+	.nav>ul>li:nth-of-type(3){
+		display: none;
+	}
+	.nav>ul>li:nth-of-type(4){
+		display: none;
+	}
+	.nav>div {
+		float: right;
+		/*background: pink;*/
+		/*padding: 2rem 0;*/
+	}
+	.nav>div>a {
+		display:none;
+		padding: 1rem;
+		/*background: palegreen;*/
+		margin-left: 1rem;
+		font-size: 18px;
+	}
+	.nav>div>a:last-of-type {
+		border: 2px solid orange;
+		border-radius: 5px;
+	}
+	.nav>div>a:last-of-type:hover {
+		background: orange;
+		color: white;
+	}
+	.nav>div>button{
+		padding: 1rem 1rem;
+		font-size: 16px;
+		margin-right: 2rem;
+		display: block;
+		margin-top: 1rem;
+		background: white;
+		border: 2px solid #CCCCCC;
+		border-radius: 5px;
+		font-family: "微软雅黑";
+		color: #CCCCCC;
+	}
+	.nav>div>button:hover{
+		background: gray;
+		color: white;
+	}
+	
+	.banner {
+		width: 100%;
+	}
+	.s-banner {
+		width: 100%;
+		background: url(../img/dog.jpg) no-repeat center;
+		background-size:100% 100% ;
+	}
+	.s-banner>p {
+		text-align: center;
+		font-size: 40px;
+		padding-top: 5rem;
+		color: white;
+	}
+	.s-banner>span{
+		text-align: center;
+		font-size: 18px;
+		display: block;
+		color: white;
+		padding-top: 4rem;
+		padding-bottom: 12rem;
+	}
+	
+	
+	.b-img{
+		width: 100%;
+		background: gainsboro;
+	}
+	.s-img{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.s-img>a{
+		display: block;
+		width: 100%;
+		float: left;
+		/*background: pink;*/
+		padding: 2rem 0;
+	}
+	.s-img>a>img{
+		display: block;
+		width: 20%;
+		margin: auto;
+	}
+	 .met{
+    	width: 100%;
+    	margin-top: 5rem;
+    }
+    .s-met{
+    	width:80% ;
+    	margin: 0 auto;
+    }
+    .met-left{
+    	width: 100%;
+    	float: left;
+    	padding-top: 7rem;
+    }
+    .met-right>ul{
+    	padding-left: 3rem;
+    }
+    .met-right>ul>li{
+    	padding-top: 1rem;
+    	font-size: 16px;
+    	list-style-type:circle;
+    	list-style-position:inside;
+    	text-align: center;
+    }
+    .met-left>img{
+    	display: block;
+    	width: 100%;
+    	height: 100%;
+    }
+    .met-right{
+    	width: 100%;
+    	float: right;
+    	padding: 50px 0px;
+    }
+    .met-right>p{
+    	font-size: 24px;
+    	font-weight: bold;
+    	padding-left:3rem;
+    }
+    .met-right>button{
+    	padding: 1rem 4rem;
+    	border: 2px solid orangered;
+    	border-radius: 3px;
+    	font-family: "微软雅黑";
+    	color: orangered;
+    	background: white;
+    	/*margin-left: 3rem*/
+    	margin:0 auto;
+    	display: block;
+    	margin-top: 4rem;
+    }
+    
+    
+    .how{
+    	width: 100%;
+    	/*background: red;*/
+    }
+    .s-how{
+    	width: 80%;
+    	/*background: pink;*/
+    	margin: 0 auto;
+    }
+    .s-how>span{
+    	display: block;
+    	text-align: center;
+    	font-size:24px;
+    	padding-top: 6rem;
+    	padding-bottom: 5rem;
+    }
+    .s-how>span>a{
+    	color: orangered;	
+    }
+    .s-how>div{
+    	width: 100%;
+    }
+    .s-how>div>div{
+    	width: 100%;
+    	float: left;
+    }
+    .s-how>div>div>img{
+    	display: block;
+    	width: 23%;
+    	margin: auto;
+    }
+    .s-how>div>div>span{
+    	text-align: center;
+    	font-size: 20px;
+    	display: block;
+    	padding-top: 5rem;
+    }
+    .s-how>div>div>span>a{
+    	color: orangered;
+    }
+    .s-how>div>div>p{
+    	text-align: center;
+    	font-size: 16px;
+    	padding-top: 2rem;
+    	padding-bottom: 12rem;
+    }
+    
+    .key{
+    	width: 100%;
+    	background: ghostwhite;
+    }
+    .s-key{
+    	width: 80%;
+    	margin: 0 auto;
+    }
+    .s-key>p{
+    	text-align: center;
+    	font-size:16px;
+    	padding-top: 5rem;
+    	padding-bottom: 10rem;
+    }
+    
+    
+    .res{
+    	width: 100%;
+    }
+    .s-res{
+    	width: 80%;
+    	margin: 0 auto;
+    }
+    .s-res>h1{
+    	text-align: center;
+    	font-size: 24px;
+    	padding-top: 10rem;
+    	padding-bottom: 3rem;
+    }
+    .s-res>div{
+    	width: 100%;
+    	float: left;
+    }
+    .s-res>div>img{
+    	width: 100%;
+    }
+    .s-res>div>a{
+    	display: block;
+    	text-align: left;
+    	font-size: 20px;
+    	padding-top: 2rem;
+    	padding-bottom: 5rem;
+    	color: cornflowerblue;
+    }
+    .s-res>div>a:hover{
+    	text-decoration: underline;
+    }
+    
+    .try{
+    	width: 100%;
+    	background: orangered;
+    }
+    .s-try{
+    	width: 80%;
+    	margin: 0 auto;
+    }
+    .s-try>h1{
+    	font-size: 24px;
+    	text-align: center;
+    	color: white;
+    	padding-top: 5rem;
+    	padding-bottom: 8rem;
+    }
+    
+    footer{
+    	width: 100%;
+    	background:black;
+    }
+    .footer{
+    	width: 80%;
+    	margin: 0 auto;
+    	padding-top: 7rem;
+    	
+    }
+    .left{
+    	width: 100%;
+    	float: left;
+    	padding-bottom: 5rem;
+    }
+    .right{
+    	width: 100%;
+    	float:left ;
+    	padding-bottom: 10rem;
+    }
+    .left>p{
+    	font-size: 20px;
+    	color: white;
+    	padding-top: 1rem;
+    }
+    .left>p>a{
+    	color: orangered;
+    }
+    .left>button{
+    	padding: 1rem 3rem;
+    	background: black;
+    	color: white;
+    	border: 3px solid orangered;
+    	border-radius: 5px;
+    	font-size: 16px;
+    	font-family: "微软雅黑";
+    	margin-top: 3rem;
+    }
+    .right>div{
+    	width: 25%;
+    	/*padding: 1rem;*/
+    	float:left ;
+    }
+    .right>div>h1{
+    	color: #CCCCCC;
+    }
+    .right>div>p{
+    	font-size: 16px;
+    	color: white;
+    }
+    
+    .end{
+    	width: 100%;
+    	font-size: 14px;
+    	text-align: center;
+    	color: #CCCCCC;
+    	padding: 1rem 0rem;
+    	background: black;
+    	padding-bottom: 10rem;
+    }
+}
